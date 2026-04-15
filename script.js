@@ -2,6 +2,7 @@
 const itemForm = document.getElementById("item-form");
 const itemInput = document.getElementById("item-input");
 const itemList = document.getElementById("item-list");
+const clearButton = document.getElementById("clear");
 
 // Ceate Icon
 function createIcon(classes) {
@@ -43,5 +44,22 @@ function addItem(e) {
   itemInput.value = ""; // Clear input text
 }
 
+// Remove Item
+function removeItem(e) {
+  // Check if remove icon is being clicked
+  if (e.target.parentElement.classList.contains("remove-item")) {
+    e.target.parentElement.parentElement.remove();
+  }
+}
+
+// Clear Items
+function clearItems(e) {
+  while (itemList.firstChild) {
+    itemList.removeChild(itemList.firstChild);
+  }
+}
+
 // Event Listeners
 itemForm.addEventListener("submit", addItem);
+itemList.addEventListener("click", removeItem);
+clearButton.addEventListener("click", clearItems);
