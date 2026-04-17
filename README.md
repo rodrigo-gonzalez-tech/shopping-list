@@ -6,6 +6,6 @@ The user can add items to the list, filter existing items, edit them, remove the
 
 The app features a simple light-theme design that is still readable and easy on the eyes thanks to the light gray background.
 
-[You can check it out here!](https://tangerine-pithivier-bccaac.netlify.app/)
+[You can check it out here!](https://rodrigo-g-shopping-list.netlify.app/)
 
 <img src="./img/demo.gif" width=900px>
