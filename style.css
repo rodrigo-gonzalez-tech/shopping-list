@@ -39,8 +39,8 @@ header h1 {
   padding: 20px;
 }
 
-.edit-mode {
-  color: #ccc;
+.edit-mode-item {
+  color: #9b9b9b;
 }
 
 /* Form & Input */
@@ -78,6 +78,17 @@ header h1 {
 
 .btn:hover {
   background-color: #444;
+}
+
+.edit-mode-btn {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.edit-mode-btn:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 .btn-link {
